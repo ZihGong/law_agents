@@ -1,33 +1,26 @@
 ###FOR PUSHING STATIC TO AWS 
 
 
-
 # from .base import *
 # from .production import *
 
 # try:
 #   from .local import *
 # except:
-  # pass
-
-
-
-
+# pass
 
 
 ###FOR GENERAL USES
 
 
-
-
-
 from .base import *
 
-try: 
-  from .local import *
-  live = False
+try:
+    from .local import *
+    
+    live = False
 except:
-  live = True
+    live = True
 
 if live:
-  from .production import *
+    from .production import *

@@ -4,11 +4,10 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('translator', '0003_auto_20230327_0851'),
     ]
-
+    
     operations = [
         migrations.AddField(
             model_name='evaldata',
